@@ -344,8 +344,14 @@ function animateStats() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const target = entry.target;
-                const finalValue = parseInt(target.getAttribute('data-value'));
-                animateValue(target, 0, finalValue, 2000);
+                const dataValue = target.getAttribute('data-value');
+                
+                if (dataValue.includes('K')) {
+                    animateValue(target, 0, 50, 2000); // 50K
+                } else {
+                    const finalValue = parseInt(dataValue);
+                    animateValue(target, 0, finalValue, 2000);
+                }
                 observer.unobserve(target);
             }
         });
@@ -362,8 +368,14 @@ function animateValue(element, start, end, duration) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
         
-        const value = Math.floor(progress * (end - start) + start);
-        element.textContent = value + (element.parentElement.textContent.includes('Million') ? 'M+' : '+');
+        // Check if the value contains 'K' for thousands
+        if (element.getAttribute('data-value').includes('K')) {
+            const value = Math.floor(progress * 50); // 50K
+            element.textContent = value + 'K+';
+        } else {
+            const value = Math.floor(progress * (end - start) + start);
+            element.textContent = value + '+';
+        }
         
         if (progress < 1) {
             requestAnimationFrame(update);
