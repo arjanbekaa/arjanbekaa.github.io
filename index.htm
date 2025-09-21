@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjan Beka - Unity Gameplay Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="game-loader"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">AB</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#cv" class="nav-link" data-section="cv">CV</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="images/profile.jpg" alt="Arjan Beka" class="avatar-img">
+                <div class="avatar-glow"></div>
+            </div>
+            <h1 class="hero-title glitch" data-text="ARJAN BEKA">ARJAN BEKA</h1>
+            <h2 class="hero-subtitle">Unity Gameplay Engineer</h2>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="stat-value" data-value="20">0</div>
+                    <div class="stat-label">Published Games</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" data-value="+50K">0</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" data-value="5">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span class="btn-text">View Projects</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="https://github.com/arjanbekaa" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                <span class="title-text">About Me</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        With over 20 published mobile games, I specialize in rapid prototyping, 
+                        performance optimization, gameplay systems, and interactive design.
+                    </p>
+                    <p>
+                        I transform creative concepts into polished, market-ready games that engage millions of players. 
+                        My expertise spans from casual puzzles to complex simulations, always focusing on optimal performance 
+                        and exceptional user experience.
+                    </p>
+                    <div class="achievement-cards">
+                        <div class="achievement-card">
+                            <i class="fas fa-trophy"></i>
+                            <h4>Performance Expert</h4>
+                            <p>Reduced CPI from $0.60 to $0.35 through optimization</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Rapid Prototyping</h4>
+                            <p>From concept to playable in record time</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Architecture</h4>
+                            <p>Scalable, maintainable code for long-term success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                <span class="title-text">Game Portfolio</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Projects
+                </button>
+                <button class="filter-btn" data-filter="playstore">
+                    <i class="fab fa-google-play"></i> Play Store
+                </button>
+                <button class="filter-btn" data-filter="github">
+                    <i class="fab fa-github"></i> GitHub
+                </button>
+                <button class="filter-btn" data-filter="apkpure">
+                    <i class="fas fa-mobile-alt"></i> APKPure
+                </button>
+                <button class="filter-btn" data-filter="featured">
+                    <i class="fas fa-star"></i> Featured
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                <span class="title-text">Tech Stack</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Game Development</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-skill="Unity 3D" data-percentage="95"></div>
+                        <div class="skill-bar" data-skill="C# Programming" data-percentage="90"></div>
+                        <div class="skill-bar" data-skill="Gameplay Mechanics" data-percentage="95"></div>
+                        <div class="skill-bar" data-skill="Physics Simulation" data-percentage="85"></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Performance & Optimization</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-skill="Mobile Optimization" data-percentage="90"></div>
+                        <div class="skill-bar" data-skill="GPU/CPU Profiling" data-percentage="85"></div>
+                        <div class="skill-bar" data-skill="Memory Management" data-percentage="88"></div>
+                        <div class="skill-bar" data-skill="Asset Optimization" data-percentage="85"></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Visual & Technical Art</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-skill="Shader Programming" data-percentage="75"></div>
+                        <div class="skill-bar" data-skill="VFX & Particles" data-percentage="80"></div>
+                        <div class="skill-bar" data-skill="UI/UX Implementation" data-percentage="85"></div>
+                        <div class="skill-bar" data-skill="Animation Systems" data-percentage="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05</span>
+                <span class="title-text">Curriculum Vitae</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="cv-preview">
+                <div class="cv-header">
+                    <h3>Arjan Beka</h3>
+                    <p>Software Developer</p>
+                    <div class="cv-quick-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Müllheim, Germany</span>
+                        <span><i class="fas fa-envelope"></i> arjanbeka.cs@gmail.com</span>
+                    </div>
+                </div>
+                <div class="cv-highlights">
+                    <div class="highlight-box">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>5+ Years Experience</h4>
+                        <p>Unity/C# Development</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-trophy"></i>
+                        <h4>20+ Games Published</h4>
+                        <p>Mobile & Desktop</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>CPI Optimization</h4>
+                        <p>$0.60 → $0.35</p>
+                    </div>
+                </div>
+                <div class="cv-actions">
+                    <button onclick="openCV()" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i> View Full CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                <span class="title-text">Get In Touch</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="contact-content">
+                <p class="contact-intro">Ready to create the next big game?</p>
+                <div class="contact-grid">
+                    <a href="https://www.linkedin.com/in/arjan-beka-b3b9b5134/" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect professionally</p>
+                    </a>
+                    <a href="https://github.com/arjanbekaa" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Drop me a message</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Arjan Beka. Built with passion for games.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
