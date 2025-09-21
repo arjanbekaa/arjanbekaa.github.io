@@ -1,8 +1,8 @@
-// CV Data - Easy to edit
+// CV Data - Updated for Senior Unity Developer
 const cvData = {
     personal: {
         name: "Arjan Beka",
-        title: "Software Developer",
+        title: "Senior Unity Developer | Gameplay Engineer",
         location: "Müllheim, 79379, Deutschland",
         phone: "+4917622901253",
         email: "arjanbeka.cs@gmail.com",
@@ -10,33 +10,51 @@ const cvData = {
         linkedin: "https://www.linkedin.com/in/arjan-beka-b3b9b5134/"
     },
     
-    summary: `Real-time 3D software engineer with 5+ years building gameplay systems and editor tools in Unity/C#. 
-    Strong 3D math (vectors, matrices, quaternions), coordinate frames and pose composition; experienced 
-    with transforms/rotations, data-driven architecture, simulations, automation pipelines, and performance 
-    optimization. I ship modular, testable code with profiling, code reviews, Git/CI. English fluent; German B1.`,
-    
+    summary: `Senior Unity Developer with 5+ years of experience building and shipping mobile 3D games. 
+    Specialized in gameplay systems, performance optimization, and LiveOps features. Experienced in leading 
+    development cycles, conducting code reviews, mentoring juniors, and collaborating with design and production 
+    to deliver polished, scalable games. Skilled in profiling, debugging, Unity GUI/NGUI frameworks, and CI pipelines.`,
+
     keyProjects: [
         {
             title: "Idle Tornado",
             subtitle: "Mobile hyper-casual idle game",
             company: "Zonda Creative Studio",
-            link: "https://play.google.com/store/apps/details?id=com.your.idletornado",
+            link: "https://play.google.com/store/apps/details?id=com.zondacreative.idletornado",
             achievements: [
-                "A/B testing & CPI optimization: Ran A/B experiments on reward pacing, graphics settings and performance tweaks—drove Cost-Per-Install (CPI) down from $0.60 to $0.35",
-                "Adaptive tornado controller: Developed an FPS-driven tornado physics controller, yielding +398% FPS, –80% CPU load, –88% Render Thread time and –75% draw calls"
+                "Developed an adaptive tornado physics controller, boosting FPS by +398% while reducing CPU load by 80% and draw calls by 75%.",
+                "Architected scalable voxel destruction using pooling, batching, and memory management for stable 60 FPS on mobile devices."
+            ]
+        },
+        {
+            title: "Dialog Graph System",
+            subtitle: "Unity Editor Tool – Pending Asset Store Release",
+            link: "https://github.com/arjanbekaa/DialogGraphSystem",
+            achievements: [
+                "Created a graph-based dialogue editor & runtime with JSON import/export, localization, undo/redo, and GraphView integration.",
+                "Built polished UGUI/TMP runtime with typewriter effect, autoplay, skip, and backlog system, designed for narrative-heavy games."
             ]
         },
         {
             title: "Anomaly Detection with Isolation Forest",
             subtitle: "AI & Data Science Project",
-            link: "https://github.com/arjanbekaa/anomaly-detection",
+            link: "https://github.com/arjanbekaa/AnomalyDetection",
             achievements: [
-                "Built a machine learning model using the Isolation Forest algorithm to detect anomalies in time-series data",
-                "Preprocessed datasets, visualized anomaly patterns, and optimized the contamination parameter to improve detection accuracy"
+                "Implemented Isolation Forest algorithm to detect anomalies in time-series data.",
+                "Preprocessed datasets, visualized anomaly patterns, and tuned parameters to improve detection accuracy."
+            ]
+        },
+        {
+            title: "Traffic Sensor Simulation",
+            subtitle: "Unity Tool – Real-world Sensor Logic",
+            link: "https://github.com/arjanbekaa/Traffic-Simulation-and-Sensor-Implementation",
+            achievements: [
+                "Developed simulation emulating real-world traffic sensor behavior using raycasting and timed detection logic.",
+                "Showcased ability to translate physical systems into game-ready mechanics with a focus on usability and realism."
             ]
         }
     ],
-    
+
     experience: [
         {
             title: "Unity Game Developer – Gameplay Engineer",
@@ -44,23 +62,11 @@ const cvData = {
             period: "Nov 2019 – Jul 2024",
             location: "Prishtina, Kosovo (Hybrid)",
             duties: [
-                "Spearheaded gameplay feature development, improving player interaction and satisfaction",
-                "Optimized game performance across various mobile platforms",
-                "Led cross-functional collaboration to ensure strategic alignment of game tasks",
-                "Delivered builds for iOS and Android using Unity Build Settings and platform-specific configurations",
-                "Familiar with App Store / Google Play build processes and plugin integration (analytics, monetization, ads)",
-                "Integrated player feedback for continuous feature and experience improvement"
-            ]
-        },
-        {
-            title: "AI Prompt and Instruction Developer",
-            company: "Outlier (Freelance)",
-            period: "Oct 2024 – Present",
-            location: "Remote",
-            duties: [
-                "Designed and refined AI system instructions for optimal task execution",
-                "Evaluated AI code and outputs for accuracy and project alignment",
-                "Corrected AI errors to maintain quality and functionality, improving user interaction"
+                "Led gameplay feature development and mentored junior developers to maintain coding standards and performance practices.",
+                "Optimized game performance across iOS and Android, ensuring smooth gameplay on low-end and high-end devices.",
+                "Collaborated with design and production to refine features, manage sprints, and hit deadlines.",
+                "Integrated monetization SDKs, analytics, and LiveOps systems for ongoing game support.",
+                "Delivered builds for iOS and Android with platform-specific configurations and plugin integration."
             ]
         },
         {
@@ -69,14 +75,32 @@ const cvData = {
             period: "May 2025 – Present",
             location: "Remote",
             duties: [
-                "Prototype and implement core gameplay systems and room-based navigation for a gamified problem-solving training tool",
-                "Design and integrate drag-and-drop mini-games, UI flows, and data-capture menus to support each training phase",
-                "Manage milestone planning, asset sourcing, and play-test iterations to ensure a polished, scalable prototype",
-                "Integrated third-party plugins (analytics, ad networks, custom SDKs) and supported build pipeline maintenance with Unity Cloud Build and GitHub Actions"
+                "Prototyping and implementing gameplay systems and room-based navigation for a gamified training tool.",
+                "Designed drag-and-drop mini-games, UI flows, and data-capture systems to support training phases.",
+                "Managed milestone planning, asset sourcing, and user testing for scalable prototypes.",
+                "Integrated third-party SDKs (analytics, ads, custom APIs) and maintained CI pipelines with Unity Cloud Build & GitHub Actions."
+            ]
+        },
+        {
+            title: "AI Prompt and Instruction Developer",
+            company: "Outlier (Freelance)",
+            period: "Oct 2024 – Present",
+            location: "Remote",
+            duties: [
+                "Designed and refined AI system instructions for optimal task execution.",
+                "Reviewed AI-generated code and corrected outputs to align with project goals.",
+                "Improved interaction quality by debugging and optimizing AI responses."
             ]
         }
     ],
-    
+
+    sideProjects: [
+        {
+            title: "Unity Tool Publishing",
+            description: "Actively developing and preparing tools for the Unity Asset Store, including editor extensions and reusable gameplay systems. Focused on scalable, developer-friendly assets that accelerate production workflows."
+        }
+    ],
+
     education: [
         {
             degree: "Master in Computer Science",
@@ -84,12 +108,12 @@ const cvData = {
             status: "In Progress"
         },
         {
-            degree: "Software Engineering Degree",
+            degree: "Bachelor in Software Engineering",
             school: "AAB College, Prishtine",
-            status: "Finished"
+            status: "Finished (2024)"
         }
     ],
-    
+
     certifications: [
         {
             name: "The Unity C# Survival Guide",
@@ -102,30 +126,23 @@ const cvData = {
             date: "April 2018"
         }
     ],
-    
+
     skills: {
-        technical: ["C#", "Java", "Python", "Unity", "Problem-Solving", "LiveOps", "A/B Testing", "Unity Profiling", "Memory Management"],
-        methodologies: ["Agile", "Design Patterns", "Git/Jira"],
-        soft: ["Clear Communication", "Creative Thinking", "Flexibility", "Leadership", "Continuous Learning"]
+        technical: [
+            "C#", "Unity 3D", "Java", "Python", "SQL", 
+            "Performance Optimization", "Memory Management",
+            "LiveOps", "Unity Profiling", "Debugging & Code Analysis",
+            "Unity GUI", "NGUI"
+        ],
+        methodologies: ["Agile", "Design Patterns", "Git", "Jira"],
+        soft: ["Leadership", "Mentoring", "Clear Communication", "Creative Thinking", "Continuous Learning"]
     },
-    
+
     languages: [
-        {
-            name: "Albanian",
-            level: "Native",
-            flag: "🇦🇱"
-        },
-        {
-            name: "English",
-            level: "Fluent",
-            flag: "🇬🇧"
-        },
-        {
-            name: "German",
-            level: "B1 (course completed, preparing for Goethe test)",
-            flag: "🇩🇪"
-        }
+        { name: "Albanian", level: "Native", flag: "🇦🇱" },
+        { name: "English", level: "Fluent", flag: "🇬🇧" },
+        { name: "German", level: "B1", flag: "🇩🇪" }
     ],
-    
+
     hobbies: ["Gaming", "Programming", "Travel"]
 };
