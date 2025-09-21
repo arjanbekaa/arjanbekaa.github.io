@@ -937,3 +937,196 @@ body {
         margin: 0 -1rem;
     }
 }
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    /* Hero Section Mobile */
+    .hero {
+        padding: 2rem 1rem;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-content {
+        padding-bottom: 80px; /* Space for scroll indicator */
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    /* Stats - Stack vertically on mobile */
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .stat-box {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    /* Buttons - Better mobile layout */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-text {
+        display: inline; /* Keep text visible on mobile */
+    }
+    
+    /* Scroll Indicator - Fixed positioning */
+    .scroll-indicator {
+        position: fixed; /* Changed from absolute */
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10; /* Ensure it's above other content */
+        background: rgba(10, 10, 10, 0.8); /* Add subtle background */
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+    .mouse {
+        width: 24px;
+        height: 40px;
+    }
+}
+
+/* Even smaller phones */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .stat-box {
+        padding: 1rem 1.5rem;
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Hide button icons on very small screens if needed */
+    @media (max-width: 350px) {
+        .btn i {
+            display: none;
+        }
+    }
+}
+
+/* Navbar mobile improvements */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background: rgba(10, 10, 10, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+}
+
+/* Better spacing for mobile stat boxes */
+.stat-box {
+    min-width: 0; /* Allow boxes to shrink */
+}
+
+/* Improve avatar on mobile */
+@media (max-width: 768px) {
+    .hero-avatar {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Improved scroll indicator */
+.scroll-indicator {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* Hide scroll indicator when scrolled */
+.scroll-indicator.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Touch-friendly buttons */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px; /* iOS touch target size */
+        display: flex;
+        align-items: center;
+    }
+    
+    .btn:active {
+        transform: scale(0.95);
+    }
+}

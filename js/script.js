@@ -566,3 +566,15 @@ function openCV() {
         window.location.href = 'cv.html';
     }
 }
+
+// Hide scroll indicator when scrolling
+window.addEventListener('scroll', () => {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        if (window.scrollY > 100) {
+            scrollIndicator.classList.add('hide');
+        } else {
+            scrollIndicator.classList.remove('hide');
+        }
+    }
+});
