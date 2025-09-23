@@ -23,7 +23,7 @@ const cvData = {
             company: "Zonda Creative Studio",
             link: "https://play.google.com/store/apps/details?id=com.zondacreative.idletornado",
             achievements: [
-                "Developed an adaptive tornado physics controller, boosting FPS by +65% while reducing CPU load by 80% and draw calls by 75%.",
+                "Developed an adaptive tornado physics controller, boosting FPS by +398% while reducing CPU load by 80% and draw calls by 75%.",
                 "Architected scalable voxel destruction using pooling, batching, and memory management for stable 60 FPS on mobile devices."
             ]
         },
