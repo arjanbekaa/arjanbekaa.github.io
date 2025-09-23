@@ -10,10 +10,11 @@ const cvData = {
         linkedin: "https://www.linkedin.com/in/arjan-beka-b3b9b5134/"
     },
     
-    summary: `Senior Unity Developer with 5+ years of experience building and shipping mobile 3D games. 
-    Specialized in gameplay systems, performance optimization, and LiveOps features. Experienced in leading 
-    development cycles, conducting code reviews, mentoring juniors, and collaborating with design and production 
-    to deliver polished, scalable games. Skilled in profiling, debugging, Unity GUI/NGUI frameworks, and CI pipelines.`,
+    summary: `Senior Unity Developer with 5+ years of experience developing and publishing mobile 3D games.
+                Specialized in gameplay systems, performance optimization, and LiveOps features. 
+                Experienced in leading development cycles, conducting code reviews, mentoring juniors, 
+                and collaborating with design and production to deliver polished, scalable games. 
+                Skilled in profiling, debugging, Unity GUI/NGUI frameworks, and CI pipelines.`,
 
     keyProjects: [
         {
@@ -22,7 +23,7 @@ const cvData = {
             company: "Zonda Creative Studio",
             link: "https://play.google.com/store/apps/details?id=com.zondacreative.idletornado",
             achievements: [
-                "Developed an adaptive tornado physics controller, boosting FPS by +398% while reducing CPU load by 80% and draw calls by 75%.",
+                "Developed an adaptive tornado physics controller, boosting FPS by +65% while reducing CPU load by 80% and draw calls by 75%.",
                 "Architected scalable voxel destruction using pooling, batching, and memory management for stable 60 FPS on mobile devices."
             ]
         },
