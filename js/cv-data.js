@@ -30,7 +30,7 @@ const cvData = {
         {
             title: "Dialog Graph System",
             subtitle: "Unity Editor Tool – Pending Asset Store Release",
-            link: "https://github.com/arjanbekaa/DialogGraphSystem",
+            link: "https://assetstore.unity.com/packages/tools/gui/dialog-graph-system-332234",
             achievements: [
                 "Created a graph-based dialogue editor & runtime with JSON import/export, localization, undo/redo, and GraphView integration.",
                 "Built polished UGUI/TMP runtime with typewriter effect, autoplay, skip, and backlog system, designed for narrative-heavy games."
