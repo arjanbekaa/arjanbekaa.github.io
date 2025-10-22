@@ -207,7 +207,7 @@ const projectsData = [
         image: "images/dialog-graph-system.png",
         tech: ["Unity 3D", "C#", "GraphView", "UGUI/TMP"],
         category: ["github", "tool", "featured"],
-        link: "https://github.com/arjanbekaa/DialogGraphSystem",
+        link: "https://assetstore.unity.com/packages/tools/gui/dialog-graph-system-332234",
         badge: "Open Source"
     },
     {
