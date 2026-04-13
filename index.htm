@@ -3,309 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjan Beka - Unity Gameplay Engineer</title>
+    <title>Arjan Beka | Software Engineer</title>
+    <meta name="description" content="Software Engineer portfolio of Arjan Beka. C#/.NET/Unity engineer focused on clean architecture, optimization, and maintainable systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="game-loader"></div>
-            <p>Loading Portfolio...</p>
-        </div>
-    </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-icon">🎮</span>
-                <span class="logo-text">AB</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
-                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
-                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
-                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
-                <li><a href="#cv" class="nav-link" data-section="cv">CV</a></li>
-                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <header class="site-header">
+        <nav id="navbar" class="navbar" aria-label="Primary navigation">
+            <div class="container nav-container">
+                <a href="#home" class="brand" aria-label="Arjan Beka home">
+                    <span class="brand-mark" aria-hidden="true">AB</span>
+                    <span class="brand-text">Arjan Beka</span>
+                </a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="particles"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-avatar">
-                <img src="images/Me.png" alt="Arjan Beka" class="avatar-img">
-                <div class="avatar-glow"></div>
-            </div>
-            <h1 class="hero-title glitch" data-text="ARJAN BEKA">ARJAN BEKA</h1>
-            <h2 class="hero-subtitle">Senior Unity Developer | Gameplay Engineer</h2>
-            <div class="hero-stats">
-                <div class="stat-box">
-                    <div class="stat-value" data-value="20">0</div>
-                    <div class="stat-label">Published Games</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value" data-value="50K">0</div>
-                    <div class="stat-label">Downloads</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value" data-value="5">0</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-            </div>
-           <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-eye"></i>
-                    <span class="btn-text">View Projects</span>
-                </a>
-                <a href="https://github.com/arjanbekaa" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/arjan-beka-b3b9b5134/" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01</span>
-                <span class="title-text">About Me</span>
-                <span class="title-line"></span>
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        With over 20 published mobile games, I specialize in rapid prototyping, 
-                        performance optimization, gameplay systems, and interactive design.
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero section">
+            <div class="hero-ambient" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Software Engineer</p>
+                    <h1>Arjan Beka</h1>
+                    <p class="hero-headline">C# Software Engineer building performant, maintainable applications and technical systems.</p>
+                    <p class="hero-summary">
+                        I build clean, reliable software across .NET and Unity environments, with a strong focus on architecture,
+                        optimization, and product delivery quality.
                     </p>
-                    <p>t
-                       I transform creative concepts into polished, market-ready games. With over 20 published titles across genres—from casual puzzles to complex simulations—I specialize in delivering optimal performance and memorable player experiences.
-                    </p>
-                    <div class="achievement-cards">
-                        <div class="achievement-card">
-                            <i class="fas fa-trophy"></i>
-                            <h4>Performance-Oriented Engineer</h4>
-                            <p>Engineered gameplay with heavy focus on optimization and memory management, ensuring smooth experiences across low- and high-end devices.</p>
-                        </div>
-                        <div class="achievement-card">
-                            <i class="fas fa-rocket"></i>
-                            <h4>Rapid Prototyping</h4>
-                            <p>From concept to playable in record time</p>
-                        </div>
-                        <div class="achievement-card">
-                            <i class="fas fa-code"></i>
-                            <h4>Clean Architecture</h4>
-                            <p>Scalable, maintainable code for long-term success</p>
-                        </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Selected Projects</a>
+                        <a href="mailto:arjanbeka.cs@gmail.com?subject=CV%20Request%20-%20Arjan%20Beka" class="btn btn-secondary">Request CV</a>
                     </div>
+                    <ul class="trust-list" aria-label="Professional highlights">
+                        <li>5+ years working with C#</li>
+                        <li>20+ shipped projects and prototypes</li>
+                        <li>B.Sc. in Computer Science</li>
+                        <li>M.Sc. in progress</li>
+                    </ul>
+                </div>
+
+                <aside class="hero-aside" data-reveal>
+                    <img src="images/Me.png" alt="Portrait of Arjan Beka" class="hero-photo" loading="eager">
+                    <div class="hero-note">
+                        <h2>Open To Roles</h2>
+                        <p>
+                            Software Engineering, Application Development, Technical Product Development,
+                            and Unity/.NET opportunities in Germany and across Europe.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="section-kicker">About</p>
+                    <h2>Engineer focused on maintainable systems and practical outcomes</h2>
+                </div>
+                <p class="section-intro" data-reveal>
+                    I combine software engineering fundamentals with hands-on delivery experience from production projects.
+                    My work centers on writing clean C# code, designing modular systems, and improving performance without
+                    sacrificing maintainability.
+                </p>
+                <div class="strength-grid">
+                    <article class="strength-card" data-reveal>
+                        <h3>C# and System Design</h3>
+                        <p>Designing modular, readable codebases with clear boundaries, reusable components, and maintainable architecture.</p>
+                    </article>
+                    <article class="strength-card" data-reveal>
+                        <h3>Performance Optimization</h3>
+                        <p>Profiling CPU, memory, and rendering bottlenecks to deliver stable, responsive behavior across target platforms.</p>
+                    </article>
+                    <article class="strength-card" data-reveal>
+                        <h3>Rapid Product Delivery</h3>
+                        <p>Turning concepts into production-ready features quickly while keeping quality, reliability, and developer velocity high.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02</span>
-                <span class="title-text">Game Portfolio</span>
-                <span class="title-line"></span>
-            </h2>
-            
-            <!-- Filter Buttons -->
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> All Projects
-                </button>
-                <button class="filter-btn" data-filter="playstore">
-                    <i class="fab fa-google-play"></i> Play Store
-                </button>
-                <button class="filter-btn" data-filter="github">
-                    <i class="fab fa-github"></i> GitHub
-                </button>
-                <button class="filter-btn" data-filter="apkpure">
-                    <i class="fas fa-mobile-alt"></i> APKPure
-                </button>
-                <button class="filter-btn" data-filter="featured">
-                    <i class="fas fa-star"></i> Featured
-                </button>
-            </div>
-
-            <!-- Projects Grid -->
-            <div id="projects-grid" class="projects-grid">
-                <!-- Projects will be dynamically inserted here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03</span>
-                <span class="title-text">Tech Stack</span>
-                <span class="title-line"></span>
-            </h2>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-gamepad"></i>
-                        <h3>Game Development</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar" data-skill="Unity 3D" data-percentage="95"></div>
-                        <div class="skill-bar" data-skill="C# Programming" data-percentage="90"></div>
-                        <div class="skill-bar" data-skill="Gameplay Mechanics" data-percentage="95"></div>
-                        <div class="skill-bar" data-skill="Physics and Mathematics" data-percentage="85"></div>
-                        <div class="skill-bar" data-skill="Game Design" data-percentage="80"></div>
-                    </div>
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="section-kicker">Selected Projects</p>
+                    <h2>Technical work across .NET applications, Unity tooling, and production delivery</h2>
                 </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-tachometer-alt"></i>
-                        <h3>Performance & Optimization</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar" data-skill="Mobile Optimization" data-percentage="90"></div>
-                        <div class="skill-bar" data-skill="GPU/CPU Profiling" data-percentage="85"></div>
-                        <div class="skill-bar" data-skill="Memory Management" data-percentage="88"></div>
-                        <div class="skill-bar" data-skill="Asset Optimization" data-percentage="85"></div>
-                    </div>
+                <p class="section-intro" data-reveal>
+                    Projects below showcase architecture decisions, optimization work, and technical ownership.
+                </p>
+                <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="section-kicker">Skills</p>
+                    <h2>Core technologies and engineering strengths</h2>
                 </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-palette"></i>
-                        <h3>Visual & Technical Art</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar" data-skill="Shader Programming" data-percentage="55"></div>
-                        <div class="skill-bar" data-skill="VFX & Particles" data-percentage="80"></div>
-                        <div class="skill-bar" data-skill="UI/UX Implementation" data-percentage="85"></div>
-                        <div class="skill-bar" data-skill="Animation Systems" data-percentage="85"></div>
-                    </div>
+                <div class="skills-grid">
+                    <article class="skill-group" data-reveal>
+                        <h3>Languages</h3>
+                        <ul class="tag-list">
+                            <li>C#</li>
+                            <li>SQL</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group" data-reveal>
+                        <h3>Frameworks and Platforms</h3>
+                        <ul class="tag-list">
+                            <li>.NET</li>
+                            <li>Unity</li>
+                            <li>Windows Forms</li>
+                            <li>REST API Integration</li>
+                            <li>Mobile and Desktop</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group" data-reveal>
+                        <h3>Core Engineering Strengths</h3>
+                        <ul class="tag-list">
+                            <li>OOP</li>
+                            <li>Clean Architecture</li>
+                            <li>Performance Optimization</li>
+                            <li>Debugging and Profiling</li>
+                            <li>UI Systems</li>
+                            <li>Data Handling</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group" data-reveal>
+                        <h3>Workflow and Tools</h3>
+                        <ul class="tag-list">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Visual Studio</li>
+                            <li>JetBrains Rider</li>
+                            <li>Unity Profiler</li>
+                            <li>Issue Tracking</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CV Section -->
-    <section id="cv" class="cv-section section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">05</span>
-                <span class="title-text">Curriculum Vitae</span>
-                <span class="title-line"></span>
-            </h2>
-            <div class="cv-preview">
-                <div class="cv-header">
-                    <h3>Arjan Beka</h3>
-                    <p>Senior Unity Developer | Gameplay Engineer</p>
-                    <div class="cv-quick-info">
-                        <span><i class="fas fa-map-marker-alt"></i> Müllheim, Germany</span>
-                        <span><i class="fas fa-envelope"></i> arjanbeka.cs@gmail.com</span>
-                    </div>
+        <section id="resume" class="section section-alt">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="section-kicker">Resume Snapshot</p>
+                    <h2>Quick profile for recruiters and hiring teams</h2>
                 </div>
-                <div class="cv-highlights">
-                    <div class="highlight-box">
-                        <i class="fas fa-briefcase"></i>
-                        <h4>5+ Years Experience</h4>
-                        <p>Unity/C# Development</p>
-                    </div>
-                    <div class="highlight-box">
-                        <i class="fas fa-trophy"></i>
-                        <h4>20+ Games Published</h4>
-                        <p>Mobile & Desktop</p>
-                    </div>
-                    <div class="highlight-box">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Performance-Oriented Engineer</h4>
-                        <p>Obsessed with profiling, optimization, and clean architecture—I use patterns and best practices to keep projects fast, stable, and scalable.</p>
-                    </div>
+                <div class="snapshot-grid">
+                    <article class="snapshot-card" data-reveal>
+                        <h3>Location</h3>
+                        <p>Muellheim, Germany</p>
+                    </article>
+                    <article class="snapshot-card" data-reveal>
+                        <h3>Education</h3>
+                        <p>B.Sc. in Computer Science</p>
+                    </article>
+                    <article class="snapshot-card" data-reveal>
+                        <h3>Current Academic Step</h3>
+                        <p>M.Sc. in progress</p>
+                    </article>
+                    <article class="snapshot-card snapshot-focus" data-reveal>
+                        <h3>Focus Areas</h3>
+                        <ul>
+                            <li>C#/.NET application development</li>
+                            <li>Unity systems and technical tooling</li>
+                            <li>Performance profiling and optimization</li>
+                            <li>Maintainable architecture and code quality</li>
+                        </ul>
+                    </article>
                 </div>
-                <div class="cv-actions">
-                    <button onclick="openCV()" class="btn btn-primary">
-                        <i class="fas fa-file-alt"></i> View Full CV
-                    </button>
+                <div class="resume-actions" data-reveal>
+                    <a href="mailto:arjanbeka.cs@gmail.com?subject=CV%20Request%20-%20Arjan%20Beka" class="btn btn-primary">Request Full CV</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04</span>
-                <span class="title-text">Get In Touch</span>
-                <span class="title-line"></span>
-            </h2>
-            <div class="contact-content">
-                <p class="contact-intro">Ready to create the next big game?</p>
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="section-kicker">Contact</p>
+                    <h2>Open to software engineering and technical development roles</h2>
+                </div>
+                <p class="contact-lead" data-reveal>
+                    Available for software engineering, application development, and technical product opportunities.
+                </p>
                 <div class="contact-grid">
-                    <a href="https://www.linkedin.com/in/arjan-beka-b3b9b5134/" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <h3>LinkedIn</h3>
-                        <p>Connect professionally</p>
-                    </a>
-                    <a href="https://github.com/arjanbekaa" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <h3>GitHub</h3>
-                        <p>Check out my code</p>
-                    </a>
-                    <a href="mailto:arjanbeka.cs@gmail.com" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                    <a href="mailto:arjanbeka.cs@gmail.com" class="contact-card" data-reveal>
                         <h3>Email</h3>
-                        <p>Drop me a message</p>
+                        <p>arjanbeka.cs@gmail.com</p>
+                    </a>
+                    <a href="https://github.com/arjanbekaa" target="_blank" rel="noopener" class="contact-card" data-reveal>
+                        <h3>GitHub</h3>
+                        <p>github.com/arjanbekaa</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arjan-beka-b3b9b5134/" target="_blank" rel="noopener" class="contact-card" data-reveal>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/arjan-beka-b3b9b5134</p>
+                    </a>
+                    <a href="mailto:arjanbeka.cs@gmail.com?subject=CV%20Request%20-%20Arjan%20Beka" class="contact-card" data-reveal>
+                        <h3>Curriculum Vitae</h3>
+                        <p>Request the latest full resume by email</p>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Arjan Beka. Built with passion for games.</p>
+        <div class="container footer-inner">
+            <p>Designed and developed by Arjan Beka</p>
+            <p>Arjan Beka - Software Engineer - <span id="current-year"></span></p>
         </div>
     </footer>
-
-    <!-- Project Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-body"></div>
-        </div>
-    </div>
 
     <script src="js/script.js"></script>
 </body>
