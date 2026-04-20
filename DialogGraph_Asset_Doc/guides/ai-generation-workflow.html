@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guide: AI Generation Workflow | Dialog Graph System Docs</title>
+  <meta name="description" content="Generate graph JSON from structured specs and import it into the graph editor.">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body data-page="ai-generation-workflow" data-base="../">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar"><div class="topbar-inner"><a class="brand" href="../index.html"><span class="brand-mark">DG</span><span class="brand-text"><span>Dialog Graph System</span><small>Documentation website</small></span></a><div class="topbar-spacer"></div><div class="top-actions"><div class="search-wrap"><input class="search-input" type="search" placeholder="Filter pages from the sidebar" readonly></div><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="sidebar">Menu</button></div></div></header>
+    <div class="page-layout">
+      <aside class="sidebar" id="sidebar"><div class="sidebar-inner" data-sidebar-nav></div></aside>
+      <main class="content-shell" id="main-content">
+        <article class="doc-article" data-doc-content>
+          <nav class="breadcrumb"><a href="../index.html">Home</a> / <span>AI Generation Workflow</span></nav>
+          <h1>Guide: AI Generation Workflow</h1>
+          <p class="lede">Generate a candidate dialogue graph from structured data, then import and refine it in the normal graph editor.</p>
+          <h2>Workflow</h2>
+          <ol>
+            <li>Create or open a <code>DialogSpecificationSO</code>.</li>
+            <li>Fill in characters, world context, tone, scene summary, and allowed actions.</li>
+            <li>Configure <code>DialogAISettings</code> and a provider asset.</li>
+            <li>Open <code>Tools &gt; Dialog System &gt; Advanced Dialog Generator</code>.</li>
+            <li>Generate JSON.</li>
+            <li>Let the import bridge create a <code>DialogGraph</code>.</li>
+            <li>Review and refine it in the graph editor.</li>
+          </ol>
+          <h2>What the AI produces</h2>
+          <p>The extension generates JSON shaped to the graph DTO model. It is not writing directly into the graph asset format; it produces importable graph JSON first.</p>
+          <h2>Best practices</h2>
+          <ul>
+            <li>keep specs narrow and clear</li>
+            <li>use realistic conversation depth</li>
+            <li>review all action nodes before shipping</li>
+            <li>treat AI output as an authoring accelerator, not the final source of truth</li>
+          </ul>
+          <nav class="page-nav" data-prev-next></nav>
+        </article>
+      </main>
+      <aside class="page-toc" data-page-toc></aside>
+    </div>
+    <footer class="footer"><div class="footer-inner"><span>Dialog Graph System docs</span><span>&copy; <span data-current-year></span></span></div></footer>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

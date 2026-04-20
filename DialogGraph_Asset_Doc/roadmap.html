@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap | Dialog Graph System Docs</title>
+  <meta name="description" content="Conservative roadmap notes based on the current repository structure and tooling.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="roadmap" data-base="">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html"><span class="brand-mark">DG</span><span class="brand-text"><span>Dialog Graph System</span><small>Documentation website</small></span></a><div class="topbar-spacer"></div><div class="top-actions"><div class="search-wrap"><input class="search-input" type="search" placeholder="Filter pages from the sidebar" readonly></div><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="sidebar">Menu</button></div></div></header>
+    <div class="page-layout">
+      <aside class="sidebar" id="sidebar"><div class="sidebar-inner" data-sidebar-nav></div></aside>
+      <main class="content-shell" id="main-content">
+        <article class="doc-article" data-doc-content>
+          <nav class="breadcrumb"><a href="index.html">Home</a> / <span>Roadmap</span></nav>
+          <h1>Roadmap</h1>
+          <p class="lede">These roadmap notes only capture improvements strongly suggested by the current codebase and tooling shape.</p>
+          <h2>High-value near-term improvements</h2>
+          <ul>
+            <li>add more automated tests for graph traversal, JSON import/export, and transcript rebuilding</li>
+            <li>improve validation and diagnostics around malformed graphs</li>
+            <li>harden package separation for the AI extension</li>
+            <li>continue improving editor polish and graph safety around Undo/Redo</li>
+            <li>improve onboarding visuals with screenshots and guided examples</li>
+          </ul>
+          <h2>Medium-term improvements</h2>
+          <ul>
+            <li>formalize custom node extension patterns</li>
+            <li>reduce hard-coded resource path assumptions</li>
+            <li>expand transcript and reporting features</li>
+            <li>add more explicit upgrade support if graph DTOs or node schema evolve</li>
+          </ul>
+          <nav class="page-nav" data-prev-next></nav>
+        </article>
+      </main>
+      <aside class="page-toc" data-page-toc></aside>
+    </div>
+    <footer class="footer"><div class="footer-inner"><span>Dialog Graph System docs</span><span>&copy; <span data-current-year></span></span></div></footer>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,5 +1,43 @@
 const selectedProjects = [
     {
+        title: "FocusPulse",
+        context: ".NET 8 · WPF Desktop App",
+        summary: "A Windows productivity analytics app that tracks real-time app activity, computes daily focus scores using a weighted algorithm, and surfaces behavioral insights through a pluggable rule engine.",
+        tech: ["C#", ".NET 8", "WPF", "MVVM", "SQLite", "EF Core", "Win32 API"],
+        highlights: [
+            "Built a complete 9-screen WPF application with a custom dark UI theme and reusable component system.",
+            "Designed a full MVVM service layer: ProcessMonitor, FocusScore, DeepWork, Insight, and Trends services.",
+            "Implemented a pluggable insight rule engine where each rule independently evaluates behavioral patterns and returns prioritized, scored recommendations."
+        ],
+        links: [
+            {
+                label: "View Case Study →",
+                url: "FocusePulse Documentation/focuspulse-portfolio.html"
+            }
+        ]
+    },
+    {
+        title: "Dialog Graph System",
+        context: "Unity Tooling · Asset Store",
+        summary: "A published Unity toolkit for authoring branching dialogue through a visual graph editor, with a full runtime, JSON round-trip workflows, action nodes, history tracking, and an optional AI generation layer.",
+        tech: ["Unity", "C#", "GraphView", "UGUI/TMP", "JSON", "ScriptableObjects"],
+        highlights: [
+            "Shipped to the Unity Asset Store — built editor tooling with custom GraphView nodes, import/export, and an AI-assisted graph generation extension.",
+            "Implemented a clean editor/runtime split: runtime reads serialized graph assets with no editor dependencies shipping to players.",
+            "Designed the IActionHandler interface and DialogActionRunner to keep gameplay logic fully decoupled from dialogue data."
+        ],
+        links: [
+            {
+                label: "View Case Study →",
+                url: "DialogGraph_Asset_Doc/portfolio.html"
+            },
+            {
+                label: "Asset Store",
+                url: "https://assetstore.unity.com/packages/tools/gui/dialog-graph-system-332234"
+            }
+        ]
+    },
+    {
         title: "Voxel Storage Performance Comparison",
         context: "C# / .NET Application",
         summary: "Built a desktop benchmarking tool to compare binary and SQL storage strategies for voxel-heavy data workflows.",
@@ -13,23 +51,6 @@ const selectedProjects = [
             {
                 label: "GitHub",
                 url: "https://github.com/arjanbekaa/VoxelStoragePerformanceComparison"
-            }
-        ]
-    },
-    {
-        title: "Dialog Graph System",
-        context: "Unity Tooling",
-        summary: "Designed and implemented a graph-based dialogue editor and runtime package for production-ready narrative workflows.",
-        tech: ["Unity", "C#", "GraphView", "UGUI/TMP", "JSON"],
-        highlights: [
-            "Built editor tooling with import/export, localization hooks, and undo/redo support.",
-            "Implemented runtime features including typewriter effects, autoplay, and backlog handling.",
-            "Structured the tool for reusability and easier team integration in content-heavy projects."
-        ],
-        links: [
-            {
-                label: "Unity Asset Store",
-                url: "https://assetstore.unity.com/packages/tools/gui/dialog-graph-system-332234"
             }
         ]
     },

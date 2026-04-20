@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings System | Dialog Graph System Docs</title>
+  <meta name="description" content="Master settings asset, runtime access, text and choice behavior, and editor settings window.">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body data-page="settings-system" data-base="../">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar"><div class="topbar-inner"><a class="brand" href="../index.html"><span class="brand-mark">DG</span><span class="brand-text"><span>Dialog Graph System</span><small>Documentation website</small></span></a><div class="topbar-spacer"></div><div class="top-actions"><div class="search-wrap"><input class="search-input" type="search" placeholder="Filter pages from the sidebar" readonly></div><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="sidebar">Menu</button></div></div></header>
+    <div class="page-layout">
+      <aside class="sidebar" id="sidebar"><div class="sidebar-inner" data-sidebar-nav></div></aside>
+      <main class="content-shell" id="main-content">
+        <article class="doc-article" data-doc-content>
+          <nav class="breadcrumb"><a href="../index.html">Home</a> / <span>Settings System</span></nav>
+          <h1>Settings System</h1>
+          <p class="lede">The settings system centralizes runtime behavior that would otherwise be scattered across prefabs and scripts.</p>
+          <h2>Runtime model</h2>
+          <p><code>DialogSettingsRuntime</code> loads a master settings asset from <code>Resources</code> and exposes helper accessors for text, choice, input, and audio settings. <code>DialogManager</code> uses these settings to resolve effective runtime behavior, with optional local overrides on the component.</p>
+          <h2>Settings categories</h2>
+          <ul>
+            <li><strong>Text:</strong> reveal effect mode, speed, fast-forward, skip, autoplay, punctuation pauses.</li>
+            <li><strong>Choices:</strong> navigation, hover selection, outline styling, pulse animation, hint and confirm behavior.</li>
+            <li><strong>Input:</strong> legacy-style key and axis configuration.</li>
+            <li><strong>Audio:</strong> volume, UI SFX, and stop/fade behavior.</li>
+          </ul>
+          <h2>Editor window</h2>
+          <p>Open <code>Tools &gt; Dialog System &gt; Settings</code>. The window creates the settings assets if they do not already exist and groups configuration into separate panels.</p>
+          <div class="placeholder-grid">
+            <article class="placeholder-card"><h3>Settings editor</h3><div class="placeholder-frame">settings-window.png</div><p>Recommended visual for this page.</p></article>
+          </div>
+          <nav class="page-nav" data-prev-next></nav>
+        </article>
+      </main>
+      <aside class="page-toc" data-page-toc></aside>
+    </div>
+    <footer class="footer"><div class="footer-inner"><span>Dialog Graph System docs</span><span>&copy; <span data-current-year></span></span></div></footer>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

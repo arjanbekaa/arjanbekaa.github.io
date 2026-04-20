@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Extension | Dialog Graph System Docs</title>
+  <meta name="description" content="Specification-driven AI generation, provider model, parser, and graph import workflow.">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body data-page="ai-extension" data-base="../">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar"><div class="topbar-inner"><a class="brand" href="../index.html"><span class="brand-mark">DG</span><span class="brand-text"><span>Dialog Graph System</span><small>Documentation website</small></span></a><div class="topbar-spacer"></div><div class="top-actions"><div class="search-wrap"><input class="search-input" type="search" placeholder="Filter pages from the sidebar" readonly></div><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="sidebar">Menu</button></div></div></header>
+    <div class="page-layout">
+      <aside class="sidebar" id="sidebar"><div class="sidebar-inner" data-sidebar-nav></div></aside>
+      <main class="content-shell" id="main-content">
+        <article class="doc-article" data-doc-content>
+          <nav class="breadcrumb"><a href="../index.html">Home</a> / <span>AI Extension</span></nav>
+          <h1>AI Extension</h1>
+          <p class="lede">The optional AI extension generates graph JSON from structured scene specifications and imports the result back into the main dialogue system.</p>
+          <h2>Key files</h2>
+          <ul>
+            <li><code>AdvancedAIDialogWindow.cs</code></li>
+            <li><code>AIGeneratorController.cs</code></li>
+            <li><code>DialogAIBridge.cs</code></li>
+            <li><code>DialogPromptBuilder.cs</code></li>
+            <li><code>DialogJSONParser.cs</code></li>
+            <li><code>LlmProviderDefinitionBase.cs</code> and providers</li>
+          </ul>
+          <h2>Workflow</h2>
+<pre><code>DialogSpecificationSO
+    -> DialogPromptBuilder
+    -> Provider request
+    -> AIGeneratorController
+    -> DialogJSONParser
+    -> DialogJsonImportBridge
+    -> DialogGraph asset</code></pre>
+          <h2>Specification model</h2>
+          <p>The generation spec centers on <code>DialogSpecificationSO</code> and includes conversation depth, character list, environment data, game context, scene summary, tone, and allowed or forbidden actions.</p>
+          <h2>Provider model</h2>
+          <p>The provider abstraction is <code>LlmProviderDefinitionBase</code>, with concrete providers for OpenAI-style chat completions, Gemini, Ollama, and custom JSON APIs.</p>
+          <h2>Main editor entry point</h2>
+          <p>Open <code>Tools &gt; Dialog System &gt; Advanced Dialog Generator</code>.</p>
+          <h2>Reliability layer</h2>
+          <p><code>DialogJSONParser</code> sanitizes common LLM formatting issues, validates structure, and repairs some graph issues before import.</p>
+          <div class="placeholder-grid">
+            <article class="placeholder-card"><h3>AI generator window</h3><div class="placeholder-frame">ai-generator-window.png</div><p>Best visual for configuration and generation flow.</p></article>
+            <article class="placeholder-card"><h3>Imported graph result</h3><div class="placeholder-frame">ai-generated-graph-result.png</div><p>Shows the handoff back into the graph editor.</p></article>
+          </div>
+          <nav class="page-nav" data-prev-next></nav>
+        </article>
+      </main>
+      <aside class="page-toc" data-page-toc></aside>
+    </div>
+    <footer class="footer"><div class="footer-inner"><span>Dialog Graph System docs</span><span>&copy; <span data-current-year></span></span></div></footer>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
